@@ -3,8 +3,8 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - landingproject',
-    title: 'landingproject',
+    titleTemplate: '%s - Landing Project',
+    title: 'Landing Project',
     htmlAttrs: {
       lang: 'en'
     },
@@ -18,6 +18,9 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  router: {
+    middleware: 'base'
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
@@ -25,6 +28,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/i18n.js' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -33,18 +37,24 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
+    ['@nuxtjs/vuetify'],
   ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/i18n',
   ],
-
-  // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
+  i18n: {
+    defaultLocale: 'en',
+    langDir: '~/lang/',
+    locales:[
+      {name: 'English' ,code: 'en', iso: 'en-US', file: 'en.json', dir: 'ltr' },
+      {name: 'Arabic' ,code: 'ar', iso: 'ar-EG', file: 'ar.json', dir: 'rtl' },
+      {name: 'Persian' ,code: 'fa', iso: 'fa-IR', file: 'fa.json', dir: 'rtl' }
+    ]
+  },
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
