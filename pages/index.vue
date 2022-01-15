@@ -1,7 +1,7 @@
 <template>
-<div>
-  {{$t('Hello')}}
-</div>
+  <div>
+    {{$t('Hello')}}
+  </div>
 </template>
 
 <script>
