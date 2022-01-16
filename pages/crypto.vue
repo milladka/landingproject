@@ -5,15 +5,15 @@
       fill-height
       class="bg-top position-relative"
     >
-      <div class="overlay-top"></div>
+      <!-- <div class="overlay-top"></div> -->
       <v-row class="zindex-head">
         <v-col
           cols="12"
           md="6"
-          class="pa-5 pa-md-15"
+          class="pa-5 pa-lg-15"
         >
-          <div class="white--text">
-            <h1 class="display-2">{{$t('HeadingHome')}}</h1>
+          <div class="white--text pa-lg-10">
+            <h1 class="display-1 font-weight-bold">{{$t('HeadingHome')}}</h1>
             <p class="title mt-7">
               {{$t('ParagraphHomeOne')}}
               <br>
@@ -27,7 +27,10 @@
         >2</v-col>
       </v-row>
     </v-container>
-    <v-container class="my-10 my-md-16 py-10">
+    <v-container
+      class="my-10 my-md-16 py-10"
+      id="scrolling-techniques-7"
+    >
       <v-row>
         <v-col cols="12">
           <p class="display-1 accent--text text-center mb-16 px-2 new-line-height">
@@ -200,7 +203,7 @@
 
     <v-container
       fluid
-      class="py-16"
+      class="py-16 my-md-16 my-5"
     >
       <v-row>
         <v-col cols="12">
@@ -306,9 +309,166 @@
     </v-container>
     <v-container
       fluid
-      class="section-five"
+      class="section-five py-16"
+    >
+      <v-row>
+        <v-col cols="12">
+          <h4 class="display-1 text-center white--text mt-5">{{$t('TitleSectionFive')}}</h4>
+        </v-col>
+        <v-col
+          cols="12"
+          class="px-3 px-md-16"
+        >
+          <p class="text-center white--text px-0 px-md-16 mx-0 mx-md-16">
+            {{$t('DescSectionFive')}}
+          </p>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-container
+      fluid
+      class="footer-crypto py-2 py-md-16 white--text"
       fill-height
-    ></v-container>
+    >
+      <v-container>
+        <v-row>
+          <v-col
+            cols="12"
+            md="4"
+            class="pa-1 pa-md-10"
+          >
+            <p class="caption">{{ $t('FoxBoxOne')}}</p>
+          </v-col>
+          <v-col
+            cols="12"
+            md="2"
+          >
+            <div>
+              <h5>Products</h5>
+              <ul>
+                <li>
+                  <a href="#">Forex Trading</a>
+                </li>
+                <li>
+                  <a href="#">Spot Metals</a>
+                </li>
+                <li>
+                  <a href="#">Spot Energies</a>
+                </li>
+                <li>
+                  <a href="#">CFD Shares</a>
+                </li>
+              </ul>
+            </div>
+          </v-col>
+
+          <v-col
+            cols="12"
+            md="2"
+          >
+            <div>
+              <h5>Company</h5>
+              <ul>
+                <li>
+                  <a href="#">Who we are</a>
+                </li>
+                <li>
+                  <a href="#">Forex Academy</a>
+                </li>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+              </ul>
+            </div>
+          </v-col>
+
+          <v-col
+            cols="12"
+            md="2"
+          >
+            <div>
+              <h5>Accounts</h5>
+              <ul>
+                <li>
+                  <a href="#">Accounts Comparison</a>
+                </li>
+                <li>
+                  <a href="#">Leverage & Margin</a>
+                </li>
+                <li>
+                  <a href="#">Deposits & Withdrawals</a>
+                </li>
+              </ul>
+            </div>
+          </v-col>
+
+          <v-col
+            cols="12"
+            md="2"
+          >
+            <div>
+              <h5>Policies</h5>
+              <ul>
+                <li>
+                  <a href="#">Risk-disclosure</a>
+                </li>
+                <li>
+                  <a href="#">Refund-policy</a>
+                </li>
+                <li>
+                  <a href="#">Privacy-policy</a>
+                </li>
+                <li>
+                  <a href="#">AML Policy</a>
+                </li>
+                <li>
+                  <a href="#">Client's Agreement</a>
+                </li>
+                <li>
+                  <a href="#">Withdrawal Policy</a>
+                </li>
+              </ul>
+            </div>
+          </v-col>
+          <v-col
+            cols="12"
+            class="mt-2 mt-md-10"
+          >
+            <p>
+              Opo Group LLC is a approved member of The Financial Commission, an international organization engaged in a resolution of disputes within the financial services industry in the Forex market
+              located in Hong Kong and London. The Financial Commission protects trader’s interests, providing an insurance for up to €20 000 per case. RISK WARNING: Trading involves a high level of risk
+              and may not be suitable for all traders or investors. You should carefully consider your trading goals or objectives, financial situations, level of experience and needs before entering into margin
+              trading with OPOFOREX. There is a risk of losing substantially more than the investor’s initial investment. Hence, you are advised to only trade the products if you fully understand the risks involved
+              and can afford them.OTHER INFORMATION: The information on this website is subject to change at any time without any prior notice and is solely for education purposes. The contents
+              do not constitute investment advice and is provided as general market commentary. OPOFOREX has taken measures to ensure the accuracy of the contents, however, does not guarantee it and
+              is not liable for any losses incurred directly or indirectly from use of or reliance on the website’s information. Please read out full Risk Disclosure Statement.
+              DISCLAIMER: OPOFOREX is authorized Saint Vincent And the The Grenadines under the Provision of Investment Services, Limited Liability company act chapter 151 of the revised Laws of
+              Saint Vincent and Grenadines 2009, With Number 866LLC2021 in Saint Vincent and Grenadines
+            </p>
+            <p>
+              Important: We are not accepting users from these countries, Australia, USA, Japan, Canada, North Korea.
+            </p>
+            <p>
+              For refunds please email to (finance@opoforex.com) and withdrawals takes up to 1 business day.
+            </p>
+            <p class="mt-16">
+              Copyrights © 2021 – All rights reserved. Website Design & Developed By OpoForex
+            </p>
+          </v-col>
+          <v-col
+            cols="12"
+            md="6"
+          >
+            <v-img
+              width="250px"
+              src="/logo-opoforex.svg"
+            ></v-img>
+          </v-col>
+
+        </v-row>
+        <!-- <span>&copy; {{ new Date().getFullYear() }}</span> -->
+      </v-container>
+    </v-container>
   </div>
 </template>
 <script>

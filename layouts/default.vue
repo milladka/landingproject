@@ -1,20 +1,38 @@
 <template>
   <v-app>
     <v-app-bar
-      absolute
-      elevation="0"
       height="80"
       class="bg-appbar"
+      fixed
+      elevate-on-scroll
     >
       <v-toolbar-title>
         <img
-          src="/logo-opoforex.svg"
-          alt=""
+          :src="windowTop > 30 ? '/logo-opoforex-dark.svg' : '/logo-opoforex.svg'"
+          alt="opoforex logo"
           srcset=""
-          width="90%"
+          width="80%"
         >
       </v-toolbar-title>
       <v-spacer></v-spacer>
+      <v-btn
+        text
+        link
+      >
+        {{ $t('Contact') }}
+      </v-btn>
+      <v-btn
+        text
+        link
+      > {{ $t('Registration') }} </v-btn>
+      <v-btn
+        text
+        link
+      > {{ $t('Login') }} </v-btn>
+      <v-btn
+        text
+        link
+      > {{ $t('LiveChat') }}</v-btn>
       <nuxt-link
         v-for="locale in availableLocales"
         :key="locale.code"
@@ -26,9 +44,6 @@
     <v-main>
       <Nuxt />
     </v-main>
-    <v-footer app>
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
   </v-app>
 </template>
 <script>
@@ -38,7 +53,15 @@ export default {
     return this.$nuxtI18nHead();
   },
   data () {
-    return {}
+    return { windowTop:0}
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.onScroll)
+  },
+  methods: {
+    onScroll(e) {
+      this.windowTop = window.top.scrollY /* or: e.target.documentElement.scrollTop */
+    }
   },
   computed: {
     availableLocales () {
@@ -46,6 +69,7 @@ export default {
     }
   },
   mounted(){
+    window.addEventListener("scroll", this.onScroll, { passive: true });
     var dir = this.$i18n.locales.find((x) => x.code === this.$i18n.locale)?.dir;
     if(dir == 'rtl'){
       this.$vuetify.rtl  = true;

@@ -26,5 +26,12 @@
     "DescriptionElementThreeSectionFour" : "Orders are executed without delay, and there is complete price transparency with raw spreads and zero commission.",
     "TitleElementFourSectionFour" : "Segregated accounts",
     "DescriptionElementFourSectionFour" : "The client's financial account is separate from the company's financial account. Furthermore, this setup helps guarantee that client's funds will not cover the company's expenses.",
-    "BtnRegister" : "Register Now"
+    "BtnRegister" : "Register Now",
+    "TitleSectionFive" : "Join over a million people who have already chosen Opoforex.",
+    "DescSectionFive" : "Over a million Traders have chosen to work with us worldwide, as we have brought the most reliable, safe and regulated and advanced trading platform to the world. We allow our clients to access multiple instruments from a single account.",
+    "FoxBoxOne" : "With the multitude of industry experience and historical success, OpoForex is the best platform for all your trading needs.",
+    "Contact" : "Contact",
+    "Registration": "Registration",
+    "Login" : "Login",
+    "LiveChat" : "LiveChat"
 }
