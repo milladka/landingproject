@@ -2,17 +2,16 @@
   <div>
     <v-container
       fluid
-      fill-height
-      class="bg-top position-relative"
+      class="bg-top bg-shares position-relative"
     >
       <!-- <div class="overlay-top"></div> -->
       <v-row class="zindex-head">
         <v-col
           cols="12"
           md="6"
-          class="pa-5 pa-lg-15"
+          class="pa-10 pa-lg-15 mt-16"
         >
-          <div class="white--text pa-lg-10 text-on-header">
+          <div class="white--text pa-lg-10">
             <h1 class="display-1 font-weight-bold">{{$t('HeadingHome')}}</h1>
             <p class="title mt-7">
               {{$t('ParagraphHomeOne')}}
@@ -33,7 +32,7 @@
     >
       <v-row>
         <v-col cols="12">
-          <p class="display-1 accent--text text-center mb-16 px-2 new-line-height">
+          <p class="display-1 primary--text text-center mb-16 px-2 new-line-height">
             {{$t('ParagraphUnderSlide')}}
           </p>
         </v-col>
@@ -47,7 +46,7 @@
               height="120px"
               width="125px"
             ></v-img>
-            <div class="mt-7 accent--text text-center font-weight-bold">
+            <div class="mt-7 primary--text text-center font-weight-bold">
               {{$t('ElementFour')}}
             </div>
           </div>
@@ -62,7 +61,7 @@
               height="120px"
               width="125px"
             ></v-img>
-            <div class="mt-7 accent--text text-center font-weight-bold">
+            <div class="mt-7 primary--text text-center font-weight-bold">
               {{$t('ElementThree')}}
             </div>
           </div>
@@ -77,7 +76,7 @@
               height="120px"
               width="80px"
             ></v-img>
-            <div class="mt-7 accent--text text-center font-weight-bold">
+            <div class="mt-7 primary--text text-center font-weight-bold">
               {{$t('ElementTwo')}}
             </div>
           </div>
@@ -92,7 +91,7 @@
               height="120px"
               width="160px"
             ></v-img>
-            <div class="mt-7 accent--text text-center font-weight-bold">
+            <div class="mt-7 primary--text text-center font-weight-bold">
               {{$t('ElementOne')}}
             </div>
           </div>
@@ -101,7 +100,7 @@
     </v-container>
     <v-container
       fluid
-      class="accent py-16"
+      class="section-three-bg py-16"
     >
       <v-container class="my-5">
         <v-row>
@@ -242,7 +241,7 @@
               <div class="d-flex align-center flex-column flex-md-row">
                 <div>
                   <v-img
-                    src="/asset-more-two.svg"
+                    src="/asset-more-five.png"
                     width="80px"
                     height="80px"
                     alt=""
@@ -327,7 +326,7 @@
     </v-container>
     <v-container
       fluid
-      class="footer-crypto py-2 py-md-16 white--text"
+      class="footer-crypto footer-crypto-share py-2 py-md-16 white--text"
       fill-height
     >
       <v-container>
@@ -468,16 +467,18 @@
               src="/logo-opoforex.svg"
             ></v-img>
           </v-col>
+
         </v-row>
+        <!-- <span>&copy; {{ new Date().getFullYear() }}</span> -->
       </v-container>
     </v-container>
   </div>
 </template>
 <script>
 export default {
-  name: 'CryptoPage',
+  name: 'SharesPage',
   head:{
-    title:'Crypto'
+    title:'Shares'
   }
 }
 </script>

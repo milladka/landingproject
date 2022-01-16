@@ -4,8 +4,19 @@
     background-size: cover;
     min-height: 80vh;
 }
+.bg-shares{
+    background-image: url('/shares-bg-min.png');
+    min-height: 95vh;
+}
+.bg-fibo{
+    background-image: url('/fibo-min.jpg');
+    background-position: bottom;
+    background-size: cover;
+    min-height: 90vh;
+}
+
 .bg-appbar{
-    background: rgb(236 237 237 / 49%)!important;
+    background: rgb(236 237 237 / 33%)!important;
 }
 .bg-appbar.v-app-bar--is-scrolled{
     background: rgb(255 255 255)!important;
@@ -27,12 +38,15 @@
     left: 0;
 }
 .overlay-top{
-    background: #00000075;
+    background: rgba(209, 172, 172, 0.22);
     width: 100%;
     height: 100%;
     position: absolute;
     top:0;
     left: 0;
+}
+.text-on-header{
+    text-shadow: 1px 1px 6px #000000bf;
 }
 .zindex-head{
     z-index: 2;
@@ -59,6 +73,9 @@
 .footer-crypto{
     background-color: #606060;
 }
+.footer-crypto-share{
+    background-color: #001244;
+}
 .footer-crypto h5{
     font-size: 19px;
 }
@@ -73,4 +90,38 @@
     text-decoration: none;
     color: white;
     font-size: 12px;
+}
+.section-three-bg{
+    background: rgb(69,145,232);
+    background: -moz-linear-gradient(-160deg, rgba(69,145,232,1) 0%, rgba(33,49,103,1) 60%, rgba(32,44,95,1) 100%);
+    background: -webkit-linear-gradient(-160deg, rgba(69,145,232,1) 0%, rgba(33,49,103,1) 60%, rgba(32,44,95,1) 100%);
+    background: linear-gradient(-160deg, rgba(69,145,232,1) 0%, rgba(33,49,103,1) 60%, rgba(32,44,95,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4591e8",endColorstr="#202c5f",GradientType=1);
+}
+.fiboda-color{
+    color: #5A579C;
+}
+.fiboda-title-text{
+    font-size: 30px;
+}
+.bg-fiboda{
+    background-color: #5A579C;
+}
+.title-section-three-fiboda{
+    color: #60AFBD;
+}
+.bg-section-four-fiboda{
+    background-image: url('/world-min.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 80vh;
+}
+.title-section-six-fiboda{
+    color: #60AFBD;
+}
+.desction-section-six-fiboda{
+    color: #5A579C;
+}
+.btn-register-fidibo{
+    background-color: #5A579C!important;
 }
