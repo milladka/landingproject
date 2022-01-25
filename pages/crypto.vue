@@ -3,20 +3,20 @@
     <v-container
       fluid
       fill-height
-      class="bg-top position-relative"
+      :class="$vuetify.rtl ? 'bg-top-rtl' : 'bg-top'"
+      class="position-relative"
     >
       <!-- <div class="overlay-top"></div> -->
       <v-row class="zindex-head">
         <v-col
           cols="12"
           md="6"
-          class="pa-5 pa-lg-15"
+          class="mt-16 py-16  mt-md-0 py-md-0 pa-5 pa-lg-15 d-flex align-center"
         >
           <div class="white--text pa-lg-10 text-on-header">
             <h1 class="display-1 font-weight-bold">{{$t('HeadingHome')}}</h1>
             <p class="title mt-7">
               {{$t('ParagraphHomeOne')}}
-              <br>
               {{$t('ParagraphHomeTwo')}}
             </p>
           </div>
@@ -24,7 +24,9 @@
         <v-col
           cols="12"
           md="6"
-        >2</v-col>
+        >
+          <LoginRegister type="crypto" />
+        </v-col>
       </v-row>
     </v-container>
     <v-container
@@ -42,11 +44,11 @@
           md="3"
         >
           <div class="d-flex flex-column align-center justify-center">
-            <v-img
-              src="/asset-four.png"
-              height="120px"
-              width="125px"
-            ></v-img>
+            <img
+              width="120"
+              src="/metatrader-logo.png"
+              alt=""
+            >
             <div class="mt-7 accent--text text-center font-weight-bold">
               {{$t('ElementFour')}}
             </div>
@@ -223,7 +225,7 @@
               <div class="d-flex align-center flex-column flex-md-row">
                 <div>
                   <v-img
-                    src="/asset-more-one.svg"
+                    src="/24-7.svg"
                     width="70px"
                     height="80px"
                     alt=""
@@ -299,7 +301,7 @@
           class="d-flex align-center justify-center mt-3"
         >
           <v-btn
-            class="btn-register white--text"
+            class="btn-register-crypto white--text"
             rounded
             depressed
             large
@@ -309,7 +311,7 @@
     </v-container>
     <v-container
       fluid
-      class="section-five py-16"
+      class="section-five-2 py-16"
     >
       <v-row>
         <v-col cols="12">
@@ -348,16 +350,16 @@
               <h5>Products</h5>
               <ul>
                 <li>
-                  <a href="#">Forex Trading</a>
+                  <a href="https://www.opoforex.com/en/forex-tradings/">Forex Trading</a>
                 </li>
                 <li>
-                  <a href="#">Spot Metals</a>
+                  <a href="https://www.opoforex.com/en/spot-metals/">Spot Metals</a>
                 </li>
                 <li>
-                  <a href="#">Spot Energies</a>
+                  <a href="https://www.opoforex.com/en/spot-energies/">Spot Energies</a>
                 </li>
                 <li>
-                  <a href="#">CFD Shares</a>
+                  <a href="https://www.opoforex.com/en/cfd-shares/">CFD Shares</a>
                 </li>
               </ul>
             </div>
@@ -372,13 +374,13 @@
               <h5>Company</h5>
               <ul>
                 <li>
-                  <a href="#">Who we are</a>
+                  <a href="https://www.opoforex.com/en/who-we-are/">Who we are</a>
                 </li>
                 <li>
-                  <a href="#">Forex Academy</a>
+                  <a href="https://www.opoforex.com/en/forex-academy/">Forex Academy</a>
                 </li>
                 <li>
-                  <a href="#">Contact us</a>
+                  <a href="https://www.opoforex.com/en/contact-us/">Contact us</a>
                 </li>
               </ul>
             </div>
@@ -393,13 +395,13 @@
               <h5>Accounts</h5>
               <ul>
                 <li>
-                  <a href="#">Accounts Comparison</a>
+                  <a href="https://www.opoforex.com/en/accounts-comparison/">Accounts Comparison</a>
                 </li>
                 <li>
-                  <a href="#">Leverage & Margin</a>
+                  <a href="https://www.opoforex.com/en/leverage-margin/">Leverage & Margin</a>
                 </li>
                 <li>
-                  <a href="#">Deposits & Withdrawals</a>
+                  <a href="https://www.opoforex.com/en/deposits-withdrawals/">Deposits & Withdrawals</a>
                 </li>
               </ul>
             </div>
@@ -414,22 +416,22 @@
               <h5>Policies</h5>
               <ul>
                 <li>
-                  <a href="#">Risk-disclosure</a>
+                  <a href="https://www.opoforex.com/wp-content/uploads/Policies/Risk-Disclosure.pdf">Risk-disclosure</a>
                 </li>
                 <li>
-                  <a href="#">Refund-policy</a>
+                  <a href="https://www.opoforex.com/wp-content/uploads/Policies/Refund-Policy.pdf">Refund-policy</a>
                 </li>
                 <li>
-                  <a href="#">Privacy-policy</a>
+                  <a href="https://www.opoforex.com/wp-content/uploads/Policies/Privacy-Policy.pdf">Privacy-policy</a>
                 </li>
                 <li>
-                  <a href="#">AML Policy</a>
+                  <a href="https://opoforex.com/wp-content/uploads/Policies/AML_Policy-OpoGroupLLC.pdf">AML Policy</a>
                 </li>
                 <li>
-                  <a href="#">Client's Agreement</a>
+                  <a href="https://www.opoforex.com/wp-content/uploads/2021/04/opoforex-client-agreement.pdf">Client's Agreement</a>
                 </li>
                 <li>
-                  <a href="#">Withdrawal Policy</a>
+                  <a href="https://www.opoforex.com/wp-content/uploads/Policies/withdrawal-conditions.pdf">Withdrawal Policy</a>
                 </li>
               </ul>
             </div>
@@ -439,7 +441,7 @@
             class="mt-2 mt-md-10"
           >
             <p>
-              Opo Group LLC is a approved member of The Financial Commission, an international organization engaged in a resolution of disputes within the financial services industry in the Forex market
+              Opo Group LLC is an approved member of The Financial Commission, an international organization engaged in a resolution of disputes within the financial services industry in the Forex market
               located in Hong Kong and London. The Financial Commission protects trader’s interests, providing an insurance for up to €20 000 per case. RISK WARNING: Trading involves a high level of risk
               and may not be suitable for all traders or investors. You should carefully consider your trading goals or objectives, financial situations, level of experience and needs before entering into margin
               trading with OPOFOREX. There is a risk of losing substantially more than the investor’s initial investment. Hence, you are advised to only trade the products if you fully understand the risks involved
@@ -450,7 +452,7 @@
               Saint Vincent and Grenadines 2009, With Number 866LLC2021 in Saint Vincent and Grenadines
             </p>
             <p>
-              Important: We are not accepting users from these countries, Australia, USA, Japan, Canada, North Korea.
+              Important: We are not accepting users from these countries, Australia, USA, Canada, North Korea, Japan.
             </p>
             <p>
               For refunds please email to (finance@opoforex.com) and withdrawals takes up to 1 business day.
@@ -474,7 +476,11 @@
   </div>
 </template>
 <script>
+import LoginRegister from '~/components/LoginRegister';
 export default {
+  components:{
+    LoginRegister
+  },
   name: 'CryptoPage',
   head:{
     title:'Crypto'

@@ -2,17 +2,33 @@
     background-image: url('/crypto-bg.png');
     background-position: center;
     background-size: cover;
-    min-height: 80vh;
+    min-height: 100vh;
+}
+.bg-top-rtl{
+    background-image: url('/crypto-bg-rtl.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
 }
 .bg-shares{
     background-image: url('/shares-bg-min.png');
-    min-height: 95vh;
+    min-height: 100vh;
+}
+.bg-shares-rtl{
+    background-image: url('/shares-bg-min-rtl.jpg');
+    min-height: 100vh;
 }
 .bg-fibo{
     background-image: url('/fibo-min.jpg');
     background-position: bottom;
     background-size: cover;
-    min-height: 90vh;
+    min-height: 100vh;
+}
+.bg-fibo-rtl{
+    background-image: url('/fibo-min-rtl.jpg');
+    background-position: bottom;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .bg-appbar{
@@ -27,6 +43,15 @@
 }
 .bg-appbar.v-app-bar--is-scrolled .v-btn__content{
     color: #00393b !important;
+}
+.bg-top-rtl:after {
+    content: "";
+    height: 3vw;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj4KICAgIDxnIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGZpbGw9IiNGRkZGRkYiPgogICAgICAgICAgICA8cGF0aCBkPSJNMCwwIEMxNi42ODg1NDE3LDYwIDMzLjM1NTIwODMsOTAgNTAsOTAgQzY2LjY0NDc5MTcsOTAgODMuMzExNDU4Myw2MCAxMDAsMCBMMTAwLDEwMCBMMCwxMDAgTDAsMCBaIj48L3BhdGg+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=);
+    width: 100vw;
+    bottom: -5px;
+    position: absolute;
+    left: 0;
 }
 .bg-top:after {
     content: "";
@@ -58,13 +83,26 @@
     line-height: 1.5!important;
 }
 .btn-register{
+    background: rgb(32,45,96);
+    background: -moz-linear-gradient(180deg, rgba(32,45,96,1) 0%, rgba(66,133,217,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(32,45,96,1) 0%, rgba(66,133,217,1) 100%);
+    background: linear-gradient(180deg, rgba(32,45,96,1) 0%, rgba(66,133,217,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#202d60",endColorstr="#4285d9",GradientType=1);
+}
+.btn-register-crypto{
     background: rgb(50,128,161);
-    background: -moz-linear-gradient(180deg, rgba(50,128,161,1) 0%, rgba(0,42,65,1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(50,128,161,1) 0%, rgba(0,42,65,1) 100%);
-    background: linear-gradient(180deg, rgba(50,128,161,1) 0%, rgba(0,42,65,1) 100%);
+    background: -moz-linear-gradient(180deg, rgba(50,128,161,1) 0%, rgba(0,42,65,1) 81%);
+    background: -webkit-linear-gradient(180deg, rgba(50,128,161,1) 0%, rgba(0,42,65,1) 81%);
+    background: linear-gradient(180deg, rgba(50,128,161,1) 0%, rgba(0,42,65,1) 81%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3280a1",endColorstr="#002a41",GradientType=1);
 }
 .section-five{
+    background-image: url('/bg-t.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+}
+.section-five-2{
     background-image: url('/bg-section-five-w.webp');
     background-size: cover;
     background-position: center;
@@ -124,4 +162,33 @@
 }
 .btn-register-fidibo{
     background-color: #5A579C!important;
+}
+.wrapper-login{
+    height: 55vh;
+    border-radius: 10px;
+}
+.wrapper-register{
+    border-radius: 10px;
+}
+.h-100{
+    height: 100%;
+}
+.fiboda-color{
+    color: #5A579C!important;
+}
+.color-icon{
+    background: rgb(66,134,218);
+    background: -moz-linear-gradient(90deg, rgba(66,134,218,1) 0%, rgba(32,44,95,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(66,134,218,1) 0%, rgba(32,44,95,1) 100%);
+    background: linear-gradient(90deg, rgba(66,134,218,1) 0%, rgba(32,44,95,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4286da",endColorstr="#202c5f",GradientType=1);
+}
+.color-shares{
+    color: #202c5f;
+}
+.share-app{
+    height: 100vh;
+}
+.t-share-p{
+    margin-top: 140px;
 }

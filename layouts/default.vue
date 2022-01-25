@@ -37,13 +37,32 @@
         text
         link
       > {{ $t('LiveChat') }}</v-btn>
-      <!-- <nuxt-link
-        v-for="locale in availableLocales"
-        :key="locale.code"
-        :to="switchLocalePath(locale.code)"
+      <v-menu
+        offset-y
+        open-on-hover
       >
-        {{ locale.name }}
-      </nuxt-link> -->
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn
+            depressed
+            v-bind="attrs"
+            v-on="on"
+            text
+            small
+          >
+            <v-icon small>mdi-translate</v-icon>
+          </v-btn>
+        </template>
+        <v-list>
+          <v-list-item
+            v-for="(locale, index) in availableLocales"
+            :key="index"
+            :to="switchLocalePath(locale.code)"
+            nuxt
+          >
+            <v-list-item-title>{{ locale.name }}</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
     </v-app-bar>
     <v-main>
       <Nuxt />

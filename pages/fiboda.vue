@@ -2,18 +2,24 @@
   <div>
     <v-container
       fluid
-      class="bg-fibo position-relative"
+      :class="$vuetify.rtl ? 'bg-fibo-rtl' : 'bg-fibo'"
+      class="position-relative"
     >
       <!-- <div class="overlay-top"></div> -->
-      <v-row class="zindex-head">
+      <v-row
+        class="zindex-head"
+        align="center"
+        :class="$vuetify.breakpoint.mobile ? '': 'share-app'"
+      >
         <v-col
           cols="12"
           md="6"
-          class="pa-10 pa-lg-15 mt-16"
+          class="d-flex align-start"
+          :class="$vuetify.breakpoint.mobile ? '': 'h-100'"
         >
-          <div class="white--text pa-lg-10">
-            <h1 class="display-1 font-weight-bold">{{$t('HeadingFibodaHome')}}</h1>
-            <p class="body  mt-7">
+          <div class="white--text pa-5 pa-lg-10 t-share-p">
+            <h1 class="headline font-weight-bold">{{$t('HeadingFibodaHome')}}</h1>
+            <p class="caption text-lg-body-1 mt-2">
               {{$t('ParagraphHomeFiboda')}}
             </p>
           </div>
@@ -21,7 +27,10 @@
         <v-col
           cols="12"
           md="6"
-        >2</v-col>
+        >
+          <LoginRegisterFiboda />
+
+        </v-col>
       </v-row>
     </v-container>
     <v-container
@@ -113,7 +122,7 @@
       <v-container class="my-5">
         <v-row>
           <v-col cols="12">
-            <h2 class="display-1 mb-10 title-section-three-fiboda font-weight-bold">
+            <h2 class="display-1 mb-10 title-section-three-fiboda font-weight-bold text-center">
               {{$t('ParagraphSectionThree')}}
             </h2>
           </v-col>
@@ -164,13 +173,67 @@
     <v-container class="py-16">
       <v-row>
         <v-col cols="12">
-          <div class="title-section-six-fiboda text-center display-1 font-weight-bold">{{$t('DTFibodo')}}</div>
+          <div class="title-section-six-fiboda text-center display-1 font-weight-bold mb-10">{{$t('DTFibodo')}}</div>
+        </v-col>
 
-          <div class="my-5 mt-10 title desction-section-six-fiboda">{{$t('DTFibodoOne')}}</div>
-          <div class="my-5 title desction-section-six-fiboda">{{$t('DTFibodoTwo')}}</div>
-          <div class="my-5 title desction-section-six-fiboda">{{$t('DTFibodoThree')}}</div>
-          <div class="my-5 title desction-section-six-fiboda">{{$t('DTFibodoFour')}}</div>
-          <div class="mt-16 text-center">
+        <v-col
+          cols="12"
+          md="3"
+          class="px-auto px-md-5"
+        >
+          <v-img
+            width="100"
+            src="/fiboda-one.png"
+            class="mx-auto"
+          ></v-img>
+          <p class="desction-section-six-fiboda mt-2">
+            {{$t('DTFibodoTwo')}}
+          </p>
+        </v-col>
+        <v-col
+          cols="12"
+          md="3"
+          class="px-auto px-md-5"
+        >
+          <v-img
+            width="100"
+            src="/fiboda-two.png"
+            class="mx-auto"
+          ></v-img>
+          <p class="desction-section-six-fiboda mt-2">
+            {{$t('DTFibodoOne')}}
+          </p>
+        </v-col>
+        <v-col
+          cols="12"
+          md="3"
+          class="px-auto px-md-5"
+        >
+          <v-img
+            width="100"
+            src="/fiboda-three.png"
+            class="mx-auto"
+          ></v-img>
+          <p class="desction-section-six-fiboda mt-2">
+            {{$t('DTFibodoFour')}}
+          </p>
+        </v-col>
+        <v-col
+          cols="12"
+          md="3"
+          class="px-auto px-md-5"
+        >
+          <v-img
+            width="100"
+            src="/fiboda-four.png"
+            class="mx-auto"
+          ></v-img>
+          <p class="desction-section-six-fiboda mt-2">
+            {{$t('DTFibodoThree')}}
+          </p>
+        </v-col>
+        <v-col cols="12">
+          <div class="mt-5 text-center">
             <v-btn
               class="btn-register-fidibo white--text"
               rounded
@@ -199,7 +262,7 @@
               <h5>HELP</h5>
               <ul>
                 <li>
-                  <a href="#">Investors' Guide</a>
+                  <a href="https://www.fiboda.com/user-guide">Investors' Guide</a>
                 </li>
               </ul>
             </div>
@@ -214,16 +277,16 @@
               <h5>INFO</h5>
               <ul>
                 <li>
-                  <a href="#">Privacy Policy</a>
+                  <a href="https://www.fiboda.com/privacy-policy">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="#">Risk Disclaimer</a>
+                  <a href="https://www.fiboda.com/risk-disclaimer">Risk Disclaimer</a>
                 </li>
                 <li>
-                  <a href="#">Terms Of Service</a>
+                  <a href="https://www.fiboda.com/terms-of-service">Terms Of Service</a>
                 </li>
                 <li>
-                  <a href="#">Sitemap</a>
+                  <a href="https://www.fiboda.com/sitemap">Sitemap</a>
                 </li>
               </ul>
             </div>
@@ -238,10 +301,10 @@
               <h5>PROGRAMS</h5>
               <ul>
                 <li>
-                  <a href="#">Trader Program</a>
+                  <a href="https://www.fiboda.com/trader-program">Trader Program</a>
                 </li>
                 <li>
-                  <a href="#">Trader Guide</a>
+                  <a href="https://www.fiboda.com/trader-guide">Trader Guide</a>
                 </li>
               </ul>
             </div>
@@ -256,25 +319,25 @@
               <h5>FEATURES</h5>
               <ul>
                 <li>
-                  <a href="#">Combos</a>
+                  <a href="https://www.fiboda.com/combos">Combos</a>
                 </li>
                 <li>
-                  <a href="#">User Lists</a>
+                  <a href="https://www.fiboda.com/lists#user-lists">User Lists</a>
                 </li>
                 <li>
-                  <a href="#">Calendar</a>
+                  <a href="https://www.fiboda.com/calendar">Calendar</a>
                 </li>
                 <li>
-                  <a href="#">Forex Tools</a>
+                  <a href="https://www.fiboda.com/forex-tools">Forex Tools</a>
                 </li>
                 <li>
-                  <a href="#">Automator</a>
+                  <a href="https://www.fiboda.com/automated-trading">Automator</a>
                 </li>
                 <li>
-                  <a href="#">FibodaGuard™</a>
+                  <a href="https://www.fiboda.com/autoprotect-your-account">FibodaGuard™</a>
                 </li>
                 <li>
-                  <a href="#">Simulate</a>
+                  <a href="https://www.fiboda.com/simulate?autorun=true">Simulate</a>
                 </li>
               </ul>
             </div>
@@ -285,6 +348,7 @@
           >
             <p>
               © Copyright 2022 Fiboda
+              <br>
               Trading spot currencies involves substantial risk and there is always the potential for loss. Your trading results may vary. Because the risk factor
               is high in the foreign exchange market trading, only genuine "risk" funds should be used in such trading. If you do not have the extra capital that
               you can afford to lose, you should not trade in the foreign exchange market. Forex Brokers and Fiboda are compensated for their services
@@ -309,6 +373,7 @@
             </p>
             <p>
               Fiboda | Fiboda Social Forex Trading 7
+              <br>
               Fiboda Group LTD is a member of The Financial Commission, an international organisation engaged in a resolution of disputes within the financial services industry in the Forex market located in Hong Kong and London.
             </p>
             <p>
@@ -325,7 +390,11 @@
   </div>
 </template>
 <script>
+import LoginRegisterFiboda from '~/components/LoginRegisterFiboda';
 export default {
+  components:{
+    LoginRegisterFiboda
+  },
   layout:'fiboda',
   name: 'FibodaPage',
   head:{
