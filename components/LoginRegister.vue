@@ -2,7 +2,7 @@
   <div class="d-flex justify-center">
     <div
       class="white pa-5 px-10"
-      :class="step == 1 ? 'wrapper-login' : 'wrapper-register'"
+      :class="[step == 1 ? 'wrapper-login' : 'wrapper-register',type == 'crypto' ? null : 'mt-md-16']"
       style="min-width: 20vw;"
     >
       <div
