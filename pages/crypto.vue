@@ -17,7 +17,6 @@
             <h1 class="display-1 font-weight-bold">{{$t('HeadingHome')}}</h1>
             <p class="title mt-7">
               {{$t('ParagraphHomeOne')}}
-              {{$t('ParagraphHomeTwo')}}
             </p>
           </div>
         </v-col>
@@ -305,6 +304,7 @@
             rounded
             depressed
             large
+            href="https://my.opoforex.com/en/register"
           >{{$t('BtnRegister')}}</v-btn>
         </v-col>
       </v-row>

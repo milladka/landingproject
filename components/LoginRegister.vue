@@ -55,32 +55,47 @@
         <div>
           <v-text-field
             outlined
+            class="mb-4"
+            hide-details
             dense
             :label="$t('firstName')"
           ></v-text-field>
           <v-text-field
             outlined
+            class="mb-4"
+            hide-details
             dense
             :label="$t('lastName')"
           ></v-text-field>
           <v-text-field
             outlined
+            class="mb-4"
+            hide-details
+            :name="`username_${Math.random()}`"
+            v-model="username"
+            autocomplete="false"
             dense
             :label="$t('username')"
           ></v-text-field>
           <v-text-field
             outlined
+            class="mb-4"
+            hide-details
             dense
             :label="$t('password')"
             type="password"
           ></v-text-field>
           <v-text-field
+            class="mb-4"
             outlined
+            hide-details
             dense
             :label="$t('Re-enterPassword')"
           ></v-text-field>
           <v-text-field
             outlined
+            class="mb-4"
+            hide-details
             dense
             :label="$t('email')"
           ></v-text-field>
@@ -114,7 +129,8 @@
       props:['type'],
       data(){
         return{
-          step:2
+          step:2,
+          username:''
         }
       }
     }

@@ -50,32 +50,44 @@
           <v-text-field
             outlined
             :label="$t('firstName')"
+            class="mb-4"
+            hide-details
             dense
           ></v-text-field>
           <v-text-field
             outlined
             :label="$t('lastName')"
+            class="mb-4"
+            hide-details
             dense
           ></v-text-field>
           <v-text-field
             outlined
             :label="$t('username')"
+            class="mb-4"
+            hide-details
             dense
           ></v-text-field>
           <v-text-field
             outlined
             :label="$t('password')"
+            class="mb-4"
+            hide-details
             dense
             type="password"
           ></v-text-field>
           <v-text-field
             outlined
             :label="$t('Re-enterPassword')"
+            class="mb-4"
+            hide-details
             dense
           ></v-text-field>
           <v-text-field
             outlined
             :label="$t('email')"
+            class="mb-4"
+            hide-details
             dense
           ></v-text-field>
           <v-btn

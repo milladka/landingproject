@@ -19,6 +19,7 @@
         v-if="!$vuetify.breakpoint.mobile"
         text
         link
+        href="https://www.opoforex.com/en/contact-us/"
       >
         {{ $t('Contact') }}
       </v-btn>

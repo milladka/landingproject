@@ -313,6 +313,7 @@
             rounded
             depressed
             large
+            href="https://my.opoforex.com/en/register"
           >{{$t('BtnRegister')}}</v-btn>
         </v-col>
       </v-row>

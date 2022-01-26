@@ -30,6 +30,38 @@
     background-size: cover;
     min-height: 100vh;
 }
+.t-share-p{
+    margin-top: 140px;
+}
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 960px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .bg-top,.bg-top-rtl,.bg-shares,.bg-shares-rtl,.bg-fibo,.bg-fibo-rtl{
+        min-height: 130vh;
+    }
+    .t-share-p{
+        margin-top: 100px;
+        margin-bottom: 250px;
+    }
+
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 960px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    .bg-top,.bg-top-rtl,.bg-shares,.bg-shares-rtl,.bg-fibo,.bg-fibo-rtl{
+        min-height: 130vh;
+    }
+    .t-share-p{
+        margin-top: 100px;
+        margin-bottom: 250px;
+    }
+}
 
 .bg-appbar{
     background: rgb(236 237 237 / 33%)!important;
@@ -188,7 +220,4 @@
 }
 .share-app{
     height: 100vh;
-}
-.t-share-p{
-    margin-top: 140px;
 }

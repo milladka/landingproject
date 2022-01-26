@@ -2,6 +2,7 @@
   <div>
     <v-container
       fluid
+      fill-height
       :class="$vuetify.rtl ? 'bg-fibo-rtl' : 'bg-fibo'"
       class="position-relative"
     >
@@ -239,6 +240,7 @@
               rounded
               depressed
               x-large
+              href="https://my.opoforex.com/en/register"
             >{{$t('BtnRegister')}}</v-btn>
           </div>
         </v-col>
